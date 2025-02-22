@@ -23,30 +23,44 @@
             margin: auto;
             padding: 20px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
         }
-        .description {
-            margin-top: 20px;
+        .section img {
+            width: 45%;
+            border: 3px solid black;
+        }
+        .section .description {
+            width: 50%;
             font-size: 18px;
+            text-align: left;
+        }
+        .section.reverse {
+            flex-direction: row-reverse;
         }
     </style>
 </head>
 <body>
     <header>Suivi de la Température et des KPI dans le Transport Alimentaire</header>
     <div class="container">
-        <img src="IMG_SITE3.jpg" alt="Suivi de la température lors du transport alimentaire">
-        <p class="description">
-            Le suivi de la température est essentiel pour garantir la qualité et la sécurité des produits alimentaires durant leur transport. 
-            Grâce aux technologies modernes, il est possible de surveiller en temps réel les conditions de transport et d'assurer 
-            le respect des normes sanitaires.
-        </p>
-        <img src="IMG_SITE1.jpg" alt="Suivi des KPI">
-        <p class="description">
-            Les indicateurs de performance (KPI) permettent de suivre et d'analyser l'efficacité du transport et de la logistique. 
-            En optimisant ces données, nous garantissons un service de qualité et une meilleure satisfaction client.
-        </p>
+        <div class="section">
+            <img src="IMG_SITE3.jpg" alt="Suivi de la température lors du transport alimentaire">
+            <p class="description">
+                Le suivi de la température est essentiel pour garantir la qualité et la sécurité des produits alimentaires durant leur transport. 
+                Grâce aux technologies modernes, il est possible de surveiller en temps réel les conditions de transport et d'assurer 
+                le respect des normes sanitaires.
+            </p>
+        </div>
+        <div class="section reverse">
+            <img src="IMG_SITE1.jpg" alt="Suivi des KPI">
+            <p class="description">
+                Les indicateurs de performance (KPI) permettent de suivre et d'analyser l'efficacité du transport et de la logistique. 
+                En optimisant ces données, nous garantissons un service de qualité et une meilleure satisfaction client.
+            </p>
+        </div>
     </div>
 </body>
 </html>
