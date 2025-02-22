@@ -3,91 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku - Niveau Difficile</title>
+    <title>Suivi de la Température et des KPI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #367b42;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-        table {
-            margin: auto;
-            border-collapse: collapse;
-            background-color: #FFC8DC;
-        }
-        td {
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            font-size: 20px;
-            border: 1px solid black;
-        }
-        input {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 20px;
-            border: none;
-            background-color: transparent;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #FF69B4;
+        header {
+            background-color: #333;
             color: white;
-            border: none;
-            cursor: pointer;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1>Sudoku - Niveau Difficile</h1>
-    <table>
-        <tbody id="sudoku-board"></tbody>
-    </table>
-    <button onclick="solveSudoku()">Résoudre</button>
-    <script>
-        const grid = [
-            [8, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 3, 6, 0, 0, 0, 0, 0],
-            [0, 7, 0, 0, 9, 0, 2, 0, 0],
-            [0, 5, 0, 0, 0, 7, 0, 0, 0],
-            [0, 0, 0, 0, 4, 5, 7, 0, 0],
-            [0, 0, 0, 1, 0, 0, 0, 3, 0],
-            [0, 0, 1, 0, 0, 0, 0, 6, 8],
-            [0, 0, 8, 5, 0, 0, 0, 1, 0],
-            [0, 9, 0, 0, 0, 0, 4, 0, 0]
-        ];
-
-        function createBoard() {
-            const board = document.getElementById("sudoku-board");
-            for (let i = 0; i < 9; i++) {
-                const row = document.createElement("tr");
-                for (let j = 0; j < 9; j++) {
-                    const cell = document.createElement("td");
-                    if (grid[i][j] !== 0) {
-                        cell.textContent = grid[i][j];
-                        cell.style.color = "darkgray";
-                    } else {
-                        const input = document.createElement("input");
-                        input.type = "text";
-                        input.maxLength = 1;
-                        input.dataset.row = i;
-                        input.dataset.col = j;
-                        cell.appendChild(input);
-                    }
-                    row.appendChild(cell);
-                }
-                board.appendChild(row);
-            }
-        }
-
-        function solveSudoku() {
-            alert("Solving function needs to be implemented!");
-        }
-
-        createBoard();
-    </script>
+    <header>Suivi de la Température et des KPI dans le Transport Alimentaire</header>
+    <div class="container">
+        <img src="IMG_SITE3.jpg" alt="Suivi de la température lors du transport alimentaire">
+        <p class="description">
+            Le suivi de la température est essentiel pour garantir la qualité et la sécurité des produits alimentaires durant leur transport. 
+            Grâce aux technologies modernes, il est possible de surveiller en temps réel les conditions de transport et d'assurer 
+            le respect des normes sanitaires.
+        </p>
+        <img src="IMG_SITE1.jpg" alt="Suivi des KPI">
+        <p class="description">
+            Les indicateurs de performance (KPI) permettent de suivre et d'analyser l'efficacité du transport et de la logistique. 
+            En optimisant ces données, nous garantissons un service de qualité et une meilleure satisfaction client.
+        </p>
+    </div>
 </body>
 </html>
