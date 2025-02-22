@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Expériences et Projets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #004466;
+            color: white;
+            padding: 30px;
+            font-size: 32px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .section img {
+            width: 45%;
+            border: 3px solid #222;
+        }
+        .section .description {
+            width: 50%;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            background-color: #006699;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Portfolio - Parcours et Projets Clés</header>
+    <div class="container">
+        <div class="title">Expérience Sportive : Compétitions de Boxe (2015 - 2019)</div>
+        <div class="section">
+            <img src="IMG_SITE4.jpg" alt="Compétition de boxe 2015 - 2019">
+            <p class="description">
+                Pendant plusieurs années, j'ai pratiqué la boxe à un niveau compétitif, participant à diverses compétitions régionales et nationales. 
+                Cette expérience m'a permis de développer discipline, persévérance et esprit de compétition, des qualités essentielles dans un environnement professionnel.
+            </p>
+        </div>
+        <div class="title">Projet Académique : Blockchain et Optimisation des Flux Logistiques</div>
+        <div class="section reverse">
+            <img src="BlockChain-IOT Transgourmet.jpg" alt="Intégration d'une blockchain pour l'optimisation logistique">
+            <p class="description">
+                Dans le cadre de mon cursus, j'ai travaillé sur l'intégration d'une blockchain pour améliorer la traçabilité et l'efficacité des flux logistiques. 
+                Ce projet a mis en évidence l'importance des nouvelles technologies dans la transformation digitale des entreprises.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
