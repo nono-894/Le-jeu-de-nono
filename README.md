@@ -1,3 +1,1 @@
-# N1
-# SUDOKU
 # SUDOKU
