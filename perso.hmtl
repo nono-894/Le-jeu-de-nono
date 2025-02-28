@@ -5,20 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Expériences et Projets</title>
     <style>
-        .body 
-        <header>Portfolio - Parcours et Projets Clés</header>
-            <nav style="text-align: center; background-color: #ccc; padding: 15px;">
-            <a href="index.html" style="margin: 0 15px; font-weight: bold; color: #004466; text-decoration: none;">Accueil</a>
-            <a href="perso.html" style="margin: 0 15px; font-weight: bold; color: #004466; text-decoration: none;">Mon Parcours</a>
-        </nav>
-        .header {
-        div class="container"
+        body {
             font-family: Arial, sans-serif;
             background-color: #e6e6e6;
             margin: 0;
             padding: 0;
             color: #333;
         }
+        header {
             background-color: #004466;
             color: white;
             padding: 30px;
@@ -26,6 +20,17 @@
             text-align: center;
             font-weight: bold;
             text-transform: uppercase;
+        }
+        nav {
+            text-align: center;
+            background-color: #bbb;
+            padding: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: #222;
+            text-decoration: none;
         }
         .container {
             width: 80%;
@@ -65,10 +70,14 @@
 </head>
 <body>
     <header>Portfolio - Parcours et Projets Clés</header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="perso.html">Mon Parcours</a>
+    </nav>
     <div class="container">
         <div class="title">Expérience Sportive : Compétitions de Boxe (2015 - 2019)</div>
         <div class="section">
-            <img src="IMG_SITE4.jpg" alt="Compétition de boxe 2015 - 2019">
+            <img src="IMG_BOXE.jpg" alt="Compétition de boxe 2015 - 2019">
             <p class="description">
                 Pendant plusieurs années, j'ai pratiqué la boxe à un niveau compétitif, participant à diverses compétitions régionales et nationales. 
                 Cette expérience m'a permis de développer discipline, persévérance et esprit de compétition, des qualités essentielles dans un environnement professionnel.
@@ -76,7 +85,7 @@
         </div>
         <div class="title">Projet Académique : Blockchain et Optimisation des Flux Logistiques</div>
         <div class="section reverse">
-            <img src="BlockChain-IOT Transgourmet.jpg" alt="Intégration d'une blockchain pour l'optimisation logistique">
+            <img src="IMG_BLOCKCHAIN.jpg" alt="Intégration d'une blockchain pour l'optimisation logistique">
             <p class="description">
                 Dans le cadre de mon cursus, j'ai travaillé sur l'intégration d'une blockchain pour améliorer la traçabilité et l'efficacité des flux logistiques. 
                 Ce projet a mis en évidence l'importance des nouvelles technologies dans la transformation digitale des entreprises.
