@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Expériences et Projets</title>
     <style>
-        body {
+        .body 
+        <header>Portfolio - Parcours et Projets Clés</header>
+            <nav style="text-align: center; background-color: #ccc; padding: 15px;">
+            <a href="index.html" style="margin: 0 15px; font-weight: bold; color: #004466; text-decoration: none;">Accueil</a>
+            <a href="perso.html" style="margin: 0 15px; font-weight: bold; color: #004466; text-decoration: none;">Mon Parcours</a>
+        </nav>
+        .header {
+        div class="container"
             font-family: Arial, sans-serif;
             background-color: #e6e6e6;
             margin: 0;
             padding: 0;
             color: #333;
         }
-        header {
             background-color: #004466;
             color: white;
             padding: 30px;
